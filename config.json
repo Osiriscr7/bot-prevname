@@ -1,0 +1,5 @@
+{
+    "mongoUrl": "votre url mongo db ici",
+    "clientToken": "token de votre bot ici",
+    "clientPrefix": "prefix que vous souhaitez ici"
+}
