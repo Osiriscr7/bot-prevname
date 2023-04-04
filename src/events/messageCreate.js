@@ -20,7 +20,7 @@ export default new Evenement({
 
     const command = client.commands.get(commandName)
 
-    if (command.userPermissions !== 'EVERYONE' && !message.member.permissions.has(Discord.PermissionFlagsBits[command.userPermsisions])) { return message.channel.send(`Vous n\'avez pas la permission requise pour utiliser cette commande\nPermission requise : \`${command.userPermissions}\``) }
+    if (command.userPermissions !== 'EVERYONE' && !message.member.permissions.has(Discord.PermissionFlagsBits[command.userPermissions])) { return message.channel.send(`Vous n\'avez pas la permission requise pour utiliser cette commande\nPermission requise : \`${command.userPermissions}\``) }
 
     try {
       command.callback(client, message, args)
